@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+	*{padding:0px; margin:0px auto;}
+	#louceng_0{background-image:url(../picture/weipinghui/ac2ac983011645a8996c785dee887047.jpg); background-repeat:no-repeat;
+	  background-color:#F6FAFD; width:1366px;}
+	#louceng_1{width:1202px;}
+	#louceng_1 .louceng{width:1202px; height:424px; margin:48px 0px; background-color:#F5F9FC;  list-style:none;}
+	#louceng_2{ width:192px; height:424px; float:left;}
+	
+	#louceng_3{ width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png);}
+	#louceng1_3{ width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -108px;}
+	#louceng2_3{ width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -222px;}
+	#louceng3_3{ width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -338px;}
+	#louceng4_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -446px;}
+	#louceng5_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -560px;}
+	#louceng6_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -668px;}
+	#louceng7_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -786px;}
+	#louceng8_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -892px;}
+	#louceng9_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -1002px;}
+	#louceng10_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -1110px;}
+	#louceng11_3{width:190px; height:90px; background-image:url(../picture/tianmao/T1YYw0FaXlXXXG2A6d-191-1400.png); background-position:0px -1222px;}
+
+	#louceng_3 a,#louceng1_3 a,#louceng2_3 a,#louceng3_3 a,#louceng4_3 a,#louceng5_3 a,#louceng6_3 a,#louceng7_3 a,#louceng8_3 a,
+	#louceng9_3 a,#louceng10_3 a,#louceng11_3 a,#louceng12_3 a{ color:#FFF; font-size:16px; text-decoration:none;}
+	#louceng_3 #louceng_15,#louceng1_3 #louceng_15,#louceng2_3 #louceng_15,#louceng3_3 #louceng_15,#louceng4_3 #louceng_15,#louceng5_3 #louceng_15
+	,#louceng6_3 #louceng_15,#louceng7_3 #louceng_15,#louceng8_3 #louceng_15,#louceng9_3 #louceng_15,#louceng10_3 #louceng_15,#louceng11_3 #louceng_15
+	{width:180px; height:80px; line-height:120px; text-align:center;}
+	
+	#louceng_5{ width:190px; font-weight:bold; height:130px; line-height:30px;}
+	#louceng_5 a{ text-decoration:none; color:#000; font-size:14px;}
+	#louceng_5 a:hover{text-decoration:underline; font-size:14px;}
+	#louceng_5 #louceng_11{width:130px;}
+	#louceng_6{ width:400px; height:422px; float:left;}
+	#louceng_7{ width:604px; height:422px; float:left; background-image:url(../picture/weipinghui/2_20141224_dingbu_1920x800px_fjg.jpg);}
+	#louceng_7 li{list-style:none;  margin:16px 8px; height:180px; float:left;}
+	#louceng_7 #louceng_14{width:580px; height:180px;}
+	#louceng_7 #louceng_16{width:180px; height:180px; line-height:180px;}
+	#louceng_7 #louceng_16 img{width:180px; height:180px; line-height:180px;}
+	
+	#louceng_4,#lunbo1_4{ width:190px; height:200px; cursor:pointer;}
+	#louceng_8,#lunbo1_8{width:120px; height:200px; float:left; margin:0px auto; overflow:hidden;}
+	#louceng_8 li,#lunbo1_8 li{width:120px; height:66px; background-color:#FFF; float:left;}
+	#louceng_8 li img,#lunbo1_8 li img{padding:10px;}
+	#louceng_9,#lunbo1_9{width:34px; height:200px; float:left; background-color:#FFF;}
+	#louceng_9 div,#lunbo1_9 div{width:32px; height:50px; margin-top:68px;
+	background-image:url(../picture/weipinghui/beauty_index_imgs.png);}
+	#louceng_10,#lunbo1_10{width:34px; height:200px; float:left; background-color:#FFF;}
+	#louceng_10 div,#lunbo1_10 div{ width:32px; height:50px; margin-top:68px;
+	background-image:url(../picture/weipinghui/beauty_index_imgs.png); background-position:-28px 0px;}
+	
+	.love{ width:18px; height:18px; position:absolute; transform:translateY(-1000%) translateX(880%);
+	background-image:url(../picture/weipinghui/te_ico.png); background-position:-80px -36px;}

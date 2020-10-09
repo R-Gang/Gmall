@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"> 
+<!-- saved from url=(0052)http://www.forest53.com/tutorials/test/3columns.html --> 
+<HTML lang=en xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>脚本控制三行三列自适应高度DIV布局</TITLE> 
+<META http-equiv=Content-Type content="text/html; charset=gb2312"> 
+<SCRIPT type=text/javascript> 
+/* 
+  ------------------------------------------------ 
+  PVII Equal CSS Columns scripts 
+  Copyright (c) 2005 Project Seven Development 
+  www.projectseven.com 
+  Version: 1.5.0 
+  ------------------------------------------------ 
+*/ 
+function P7_colH(){ //v1.5 by PVII-www.projectseven.com 
+ var i,oh,hh,h=0,dA=document.p7eqc,an=document.p7eqa;if(dA&&dA.length){ 
+ for(i=0;i<dA.length;i++){dA[i].style.height='auto';}for(i=0;i<dA.length;i++){ 
+ oh=dA[i].offsetHeight;h=(oh>h)?oh:h;}for(i=0;i<dA.length;i++){if(an){ 
+ dA[i].style.height=h+'px';}else{P7_eqA(dA[i].id,dA[i].offsetHeight,h);}}if(an){ 
+ for(i=0;i<dA.length;i++){hh=dA[i].offsetHeight;if(hh>h){ 
+ dA[i].style.height=(h-(hh-h))+'px';}}}else{document.p7eqa=1;} 
+ document.p7eqth=document.body.offsetHeight; 
+ document.p7eqtw=document.body.offsetWidth;} 
+} 
+function P7_eqT(){ //v1.5 by PVII-www.projectseven.com 
+ if(document.p7eqth!=document.body.offsetHeight||document.p7eqtw!=document.body.offsetWidth){ 
+ P7_colH();} 
+} 
+function P7_equalCols(){ //v1.5 by PVII-www.projectseven.com 
+ if(document.getElementById){document.p7eqc=new Array;for(i=0;i<arguments.length;i++){ 
+ document.p7eqc[i]=document.getElementById(arguments[i]);}setInterval("P7_eqT()",10);} 
+} 
+function P7_eqA(el,h,ht){ //v1.5 by PVII-www.projectseven.com 
+ var sp=10,inc=10,nh=h,g=document.getElementById(el),oh=g.offsetHeight,ch=parseInt(g.style.height); 
+ ch=(ch)?ch:h;var ad=oh-ch,adT=ht-ad;nh+=inc;nh=(nh>adT)?adT:nh;g.style.height=nh+'px'; 
+ oh=g.offsetHeight;if(oh>ht){nh=(ht-(oh-ht));g.style.height=nh+'px';} 
+ if(nh<adT){setTimeout("P7_eqA('"+el+"',"+nh+","+ht+")",sp);} 
+} 
+</SCRIPT> 
+  
+<STYLE type=text/css>BODY { 
+PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 75%; PADDING-BOTTOM: 0px; MARGIN: 5px; LINE-HEIGHT: 100%; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif 
+} 
+#header { 
+PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 760px; PADDING-TOP: 0px 
+} 
+#mid { 
+PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 760px; PADDING-TOP: 0px 
+} 
+#footer { 
+PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 760px; PADDING-TOP: 0px 
+} 
+#header { 
+BACKGROUND: #f4f4f4; MARGIN-BOTTOM: 5px; HEIGHT: 60px 
+} 
+H3 { 
+MARGIN: 0px; COLOR: #708090; PADDING-TOP: 25px; TEXT-ALIGN: center 
+} 
+H5 { 
+MARGIN: 0px; COLOR: #708090; PADDING-TOP: 25px; TEXT-ALIGN: center 
+} 
+#fbox { 
+BACKGROUND: #f1f1f1; FLOAT: left; WIDTH: 195px 
+} 
+#mbox { 
+PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #dff7ff; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 5px; WIDTH: 360px; PADDING-TOP: 0px 
+} 
+#sbox { 
+BACKGROUND: #ffebcc; FLOAT: right; WIDTH: 195px 
+} 
+P { 
+PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 0px; TEXT-INDENT: 2em; LINE-HEIGHT: 130%; PADDING-TOP: 10px 
+} 
+#footer { 
+CLEAR: both; BORDER-TOP: #ffffff 5px solid; BACKGROUND: #cddbed; HEIGHT: 60px; TEXT-ALIGN: center 
+} 
+</STYLE> 
+  
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR></HEAD> 
+<BODY onLoad="P7_equalCols('fbox','mbox','sbox')"> 
+<DIV id=header> 
+<H3>脚本控制三行三列自适应高度DIV布局</H3></DIV> 
+<DIV id=mid> 
+<DIV id=fbox> 
+<P>亲和力指的并不只是关于盲人和屏幕阅读器。还有许多人虽然不是盲人，但是有视力障碍 - 
+你我变老时就会成为他们的一员。使网站变得更具亲和力的一个最简单的方法就是允许用户改变文字大小；拒绝提供这样的选择就剥夺了用户的主导权，很可能使用户无法舒适地阅读。 
+</P> 
+<P>亲和力指的并不只是关于盲人和屏幕阅读器。还有许多人虽然不是盲人，但是有视力障碍 - 
+你我变老时就会成为他们的一员。使网站变得更具亲和力的一个最简单的方法就是允许用户改变文字大小；拒绝提供这样的选择就剥夺了用户的主导权，很可能使用户无法舒适地阅读。 
+</P></DIV> 
+<DIV id=mbox> 
+<P>亲和力指的并不只是关于盲人和屏幕阅读器。还有许多人虽然不是盲人，但是有视力障碍 - 
+你我变老时就会成为他们的一员。使网站变得更具亲和力的一个最简单的方法就是允许用户改变文字大小；拒绝提供这样的选择就剥夺了用户的主导权，很可能使用户无法舒适地阅读。 
+</P> 
+<P>如果设计者使用像素为单位指定文字大小，大多数的用户将无法缩放文字，因为 Internet Explorer 
+改变文字大小的方式与别的浏览器不同。Mozilla 和 Opera 可以缩放已经设定像素大小的文字，而Windows 下的IE却不能。 </P> 
+<P>亲和力指的并不只是关于盲人和屏幕阅读器。还有许多人虽然不是盲人，但是有视力障碍 - 
+你我变老时就会成为他们的一员。使网站变得更具亲和力的一个最简单的方法就是允许用户改变文字大小；拒绝提供这样的选择就剥夺了用户的主导权，很可能使用户无法舒适地阅读。 
+</P> 
+<P>如果设计者使用像素为单位指定文字大小，大多数的用户将无法缩放文字，因为 Internet Explorer 
+改变文字大小的方式与别的浏览器不同。Mozilla 和 Opera 可以缩放已经设定像素大小的文字，而Windows 下的IE却不能。 </P></DIV> 
+<DIV id=sbox> 
+<P>亲和力指的并不只是关于盲人和屏幕阅读器。还有许多人虽然不是盲人，但是有视力障碍 - 
+你我变老时就会成为他们的一员。使网站变得更具亲和力的一个最简单的方法就是允许用户改变文字大小；拒绝提供这样的选择就剥夺了用户的主导权，很可能使用户无法舒适地阅读。 
+</P></DIV></DIV> 
+<DIV id=footer> 
+<H5>欢迎访问：<A href="http://www.yzci.com/">Yzci.Com</A></H5> 
+</DIV></BODY></HTML>

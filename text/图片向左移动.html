@@ -1,0 +1,71 @@
+　<!DOCTYPE html > 
+<html> 
+<head> 
+<meta content="text/html; charset=utf-8" /> 
+<title>图片左右间隔滚动Jquery特效</title> 
+<style type="text/css"> 
+*{ margin:0px; padding:0px; font-size:12px;} 
+a{ text-decoration:none; font-size:12px;} 
+a:link{color:#383455;font-size:12px;} 
+a:hover{color:#ff0000;font-size:12px;} 
+a:visited{color:#383455;font-size:12px;} 
+img{ border:none;} 
+.hl_main5_content{width:898px; height:155px; border-top:none; margin-left:1px; margin:100px auto;} 
+.hl_main5_content1{width:838px;margin-top:5px; overflow:hidden; float:left; margin-left:15px;} 
+.hl_main5_content1 ul{width:1600px; overflow:hidden;} 
+.hl_main5_content1 ul li{ float:left; width:200px; display:inline; border:1px #FF0000 solid; margin-right:10px;} 
+.hl_main5_content1 ul li img{ width:200px; } 
+.hl_scrool_leftbtn{width:14px; height:38px; background:#ccc url(hl_scroll_left.jpg) no-repeat; float:left; margin-top:50px; cursor:pointer;} 
+.hl_scrool_rightbtn{width:14px; height:38px; background:#ccc url(hl_scroll_right.jpg) no-repeat; float:right;margin-top:50px; cursor:pointer;} 
+</style> 
+</head> 
+<body> 
+<div class="hl_main5_content"> 
+<div class="hl_scrool_leftbtn"></div> 
+<div class="hl_scrool_rightbtn"></div> 
+<div class="hl_main5_content1"> 
+<ul> 
+<li><a><img src="../picture/weipinghui/2014112110403131.jpg" /></a></li> 
+<li><a><img src="../picture/weipinghui/20140521145809681.jpg"/></a></li> 
+<li><a><img src="../picture/weipinghui/2014071816483035561.jpg"/></a></li> 
+<li><a><img src="../picture/weipinghui/2014111010543372601.jpg"/></a></li> 
+<li><a><img src="../picture/weipinghui/2014102713431559761.jpg"/></a></li> 
+<li><a><img src="../picture/weipinghui/2014071816483035561.jpg" /></a></li> 
+<li><a><img src="../picture/weipinghui/2014062309544229321.jpg"/></a></li> 
+</ul> 
+</div> 
+</div> 
+<script type="text/javascript" src="../js/jquery-1.8.3.js"> </script> 
+<script type="text/javascript"> 
+var flag = "left"; 
+function DY_scroll(wraper,prev,next,img,speed,or){ 
+var wraper = $(wraper); 
+var prev = $(prev); 
+var next = $(next); 
+var img = $(img).find('ul'); 
+var w = img.find('li').outerWidth(true);
+var s = speed; 
+next.click(function(){ 
+img.animate({'margin-left':-w},function(){ 
+img.find('li').eq(0).appendTo(img); 
+img.css({'margin-left':0}); 
+}); 
+flag = "left"; 
+}); 
+prev.click(function(){ 
+img.find('li:last').prependTo(img); 
+img.css({'margin-left':-w}); 
+img.animate({'margin-left':0}); 
+flag = "right"; 
+}); 
+if (or == true){ 
+ad = setInterval(function() { flag == "left" ? next.click() : prev.click()},s*1000); 
+wraper.hover(function(){clearInterval(ad);},function(){ad = setInterval(function() {flag == "left" ? next.click() : prev.click()},s*1000);}); 
+} 
+} 
+DY_scroll('.hl_main5_content','.hl_scrool_leftbtn','.hl_scrool_rightbtn','.hl_main5_content1',3,true);// true为自动播放，不加此参数或false就默认不自动 
+</script> 
+<div style="margin:0 auto; width:950px;"> 
+支持自动播放的开启与关闭,同时支持左右箭头的点击播放。主要是修改DY_scroll()里面的参�?第一个参数hl_main5_content是最外层的div的class，其次是左边按纽,右边按纽,包含图片的div,时间(控制速度�?值越小越�?,是否自动播放�?/div> 
+</body> 
+</html> 

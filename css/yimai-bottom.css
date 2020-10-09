@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{padding:0px; margin:0px;}
+	#bottom_0{ width:1366px;}
+	#footer{ width:1366px; height:330px; margin:0px auto; background-color:#FCFCFC;}
+	#footer .tmall-desc{width:1106px; margin:0px auto;}
+	#footer .tmall-ensure{width:1200px; margin:0px auto; padding:8px; height:100px; clear:both;
+	 background-image:url(../picture/tianmao/T1ZjhhFpRkXXX1CdwH-1190-100.jpg); border-bottom:2px solid #000;}
+	#footer .tmall-desc dl{width:118px; float:left; padding:10px 48px;}
+	#footer .tmall-desc dt{font-weight:bold; height:28px;}
+	#footer .tmall-desc dd{font-size:12px; width:100px; line-height:20px;}
+	#footer .tmall-desc dd li{ list-style:none;}
+	#footer .tmall-desc a{ color:#8B8B8B;}
+	#footer a{ text-decoration:none;}
+	#footer a:hover{ text-decoration:underline;}
+	
+	
+	.footer-info{width:1366px; border-top:3px solid #F00; background-color:#000; font-size:12px;}
+	.footer-info a:hover{ text-decoration:underline;}
+	.footer-info .tmall-intro{ width:1200px; height:40px; line-height:20px; margin:0px auto; color:#FFF;}
+	.footer-info .tmall-intro a{ text-decoration:none; color:#FFF;}
+	.footer-info .tmall-intro a:hover{ text-decoration:underline;}
+	.footer-info .tmall-copyright{width:1200px; height:80px; line-height:40px; margin:0px auto;  color:#646464;}
+	.footer-info .tmall-copyright a{ text-decoration:none; color:#646464;}
+	.footer-info .tmall-copyright a:hover{ text-decoration:underline;}
